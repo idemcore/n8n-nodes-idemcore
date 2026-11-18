@@ -1,0 +1,10 @@
+{
+	"node": "@idemcore/n8n-nodes-idemcore.idemcore",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Utility"],
+	"resources": {
+		"credentialDocumentation": [{ "url": "https://idemcore.net/integrations/n8n" }],
+		"primaryDocumentation": [{ "url": "https://github.com/idemcore/n8n-nodes-idemcore#readme" }]
+	}
+}
