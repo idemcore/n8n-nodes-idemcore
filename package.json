@@ -1,0 +1,59 @@
+{
+	"name": "@idemcore/n8n-nodes-idemcore",
+	"version": "0.2.1",
+	"description": "n8n community node for Idemcore: AI answers with a signed receipt, and free offline receipt checks",
+	"license": "MIT",
+	"homepage": "https://idemcore.net/integrations/n8n",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"idemcore",
+		"ai",
+		"receipts",
+		"verification"
+	],
+	"author": {
+		"name": "MATEIAM COMPANY LIMITED",
+		"email": "dev@idemcore.net"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/idemcore/n8n-nodes-idemcore.git"
+	},
+	"bugs": {
+		"url": "https://github.com/idemcore/n8n-nodes-idemcore/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"test": "node --test test/*.test.js",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/IdemcoreApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Idemcore/Idemcore.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
